@@ -64,7 +64,7 @@ export function stopComposeService(serviceName: String){
 }
 
 function wipeSqlite(){
-    console.log(`Delete Vaultwarden container to wipe sqlite`);
+    console.log(`Delete CTFC - Vaultwarden container to wipe sqlite`);
     execSync(`docker compose --env-file test.env stop Vaultwarden`);
     execSync(`docker compose --env-file test.env rm -f Vaultwarden`);
 }
@@ -198,19 +198,19 @@ export async function startVault(browser: Browser, testInfo: TestInfo, env = {},
         }
     }
 
-    console.log(`Starting Vaultwarden`);
+    console.log(`Starting CTFC - Vaultwarden`);
     execSync(`docker compose --profile playwright --env-file test.env up -d Vaultwarden`, {
         env: { ...env, ...dbConfig(testInfo) },
     });
     await waitFor("/", browser);
-    console.log(`Vaultwarden running on: ${process.env.DOMAIN}`);
+    console.log(`CTFC - Vaultwarden running on: ${process.env.DOMAIN}`);
 }
 
 export async function stopVault(force: boolean = false) {
     if( force === false && process.env.PW_KEEP_SERVICE_RUNNNING === "true" ) {
-        console.log(`Keep vaultwarden running on: ${process.env.DOMAIN}`);
+        console.log(`Keep CTFC - Vaultwarden running on: ${process.env.DOMAIN}`);
     } else {
-        console.log(`Vaultwarden stopping`);
+        console.log(`CTFC - Vaultwarden stopping`);
         execSync(`docker compose --profile playwright --env-file test.env stop Vaultwarden`);
     }
 }
