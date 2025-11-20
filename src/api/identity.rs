@@ -138,7 +138,7 @@ async fn _refresh_login(data: ConnectData, conn: &DbConn, ip: &ClientIp) -> Json
     // ---
     // Disabled this variable, it was used to generate the JWT
     // Because this might get used in the future, and is add by the Bitwarden Server, lets keep it, but then commented out
-    // See: https://github.com/dani-garcia/vaultwarden/issues/4156
+    // See: https://github.com/mcasillas-ctfc/ctfc-vaultwarden/issues/4156
     // ---
     // let members = Membership::find_confirmed_by_user(&user.uuid, conn).await;
     match auth::refresh_tokens(ip, &refresh_token, data.client_id, conn).await {
@@ -579,7 +579,7 @@ async fn _user_api_key_login(
     // ---
     // Disabled this variable, it was used to generate the JWT
     // Because this might get used in the future, and is add by the Bitwarden Server, lets keep it, but then commented out
-    // See: https://github.com/dani-garcia/vaultwarden/issues/4156
+    // See: https://github.com/mcasillas-ctfc/ctfc-vaultwarden/issues/4156
     // ---
     // let orgs = Membership::find_confirmed_by_user(&user.uuid, conn).await;
     let access_claims = auth::LoginJwtClaims::default(&device, &user, &AuthMethod::UserApiKey, data.client_id);

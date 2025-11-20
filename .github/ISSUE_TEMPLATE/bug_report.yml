@@ -10,17 +10,17 @@ body:
 
         Please **do not** submit feature requests or ask for help on how to configure Vaultwarden here!
 
-        The [GitHub Discussions](https://github.com/dani-garcia/vaultwarden/discussions/) has sections for Questions and Ideas.
+        The [GitHub Discussions](https://github.com/mcasillas-ctfc/ctfc-vaultwarden/discussions/) has sections for Questions and Ideas.
 
-        Our [Wiki](https://github.com/dani-garcia/vaultwarden/wiki/) has topics on how to configure Vaultwarden.
+        Our [Wiki](https://github.com/mcasillas-ctfc/ctfc-vaultwarden/wiki/) has topics on how to configure Vaultwarden.
 
-        Also, make sure you are running [![GitHub Release](https://img.shields.io/github/release/dani-garcia/vaultwarden.svg)](https://github.com/dani-garcia/vaultwarden/releases/latest) of Vaultwarden!
+        Also, make sure you are running [![GitHub Release](https://img.shields.io/github/release/dani-garcia/vaultwarden.svg)](https://github.com/mcasillas-ctfc/ctfc-vaultwarden/releases/latest) of Vaultwarden!
 
         Be sure to check and validate the Vaultwarden Admin Diagnostics (`/admin/diagnostics`) page for any errors!
-        See here [how to enable the admin page](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page).
+        See here [how to enable the admin page](https://github.com/mcasillas-ctfc/ctfc-vaultwarden/wiki/Enabling-admin-page).
 
         > [!IMPORTANT]
-        > ## :bangbang: Search for existing **Closed _AND_ Open** [Issues](https://github.com/dani-garcia/vaultwarden/issues?q=is%3Aissue%20) **_AND_** [Discussions](https://github.com/dani-garcia/vaultwarden/discussions?discussions_q=) regarding your topic before posting! :bangbang:
+        > ## :bangbang: Search for existing **Closed _AND_ Open** [Issues](https://github.com/mcasillas-ctfc/ctfc-vaultwarden/issues?q=is%3Aissue%20) **_AND_** [Discussions](https://github.com/mcasillas-ctfc/ctfc-vaultwarden/discussions?discussions_q=) regarding your topic before posting! :bangbang:
   #
   - type: checkboxes
     id: checklist
@@ -28,9 +28,9 @@ body:
       label: Prerequisites
       description: Please confirm you have completed the following before submitting an issue!
       options:
-        - label: I have searched the existing **Closed _AND_ Open** [Issues](https://github.com/dani-garcia/vaultwarden/issues?q=is%3Aissue%20) **_AND_** [Discussions](https://github.com/dani-garcia/vaultwarden/discussions?discussions_q=)
+        - label: I have searched the existing **Closed _AND_ Open** [Issues](https://github.com/mcasillas-ctfc/ctfc-vaultwarden/issues?q=is%3Aissue%20) **_AND_** [Discussions](https://github.com/mcasillas-ctfc/ctfc-vaultwarden/discussions?discussions_q=)
           required: true
-        - label: I have searched and read the [documentation](https://github.com/dani-garcia/vaultwarden/wiki/)
+        - label: I have searched and read the [documentation](https://github.com/mcasillas-ctfc/ctfc-vaultwarden/wiki/)
           required: true
   #
   - id: support-string

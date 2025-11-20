@@ -71,7 +71,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 {% if base == "debian" %}
 
 # Force the install of an older MariaDB library to prevent a Diesel panic
-# See https://github.com/dani-garcia/vaultwarden/issues/6416
+# See https://github.com/mcasillas-ctfc/ctfc-vaultwarden/issues/6416
 RUN echo "deb http://snapshot.debian.org/archive/debian/20250707T084701Z/ trixie main" > /etc/apt/sources.list.d/snapshot.list && \
     echo "Acquire::Check-Valid-Until false;" > etc/apt/apt.conf.d/AllowSnapshot && \
     echo 'Package: libmariadb libmariadb3 libmariadb-dev mariadb*' > /etc/apt/preferences.d/mariadb-snapshot && \
@@ -217,7 +217,7 @@ ENV ROCKET_PROFILE="release" \
 RUN mkdir /data && \
 {% if base == "debian" %}
     # Force the install of an older MariaDB library to prevent a Diesel panic
-    # See https://github.com/dani-garcia/vaultwarden/issues/6416
+    # See https://github.com/mcasillas-ctfc/ctfc-vaultwarden/issues/6416
     echo "deb http://snapshot.debian.org/archive/debian/20250707T084701Z/ trixie main" > /etc/apt/sources.list.d/snapshot.list && \
     echo "Acquire::Check-Valid-Until false;" > etc/apt/apt.conf.d/AllowSnapshot && \
     echo 'Package: libmariadb libmariadb3 libmariadb-dev mariadb*' > /etc/apt/preferences.d/mariadb-snapshot && \
